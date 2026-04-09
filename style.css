@@ -76,3 +76,16 @@ body{
     height:420px;
 }
     
+.undecor{
+    text:decoration:none;
+}
+
+.footer{
+    width:90%;
+    margin:auto;
+    height:40px;
+    line-height:40px;
+    background:#471aa8;
+    color:#fff;
+    margin-bottom: 1pc;
+}
