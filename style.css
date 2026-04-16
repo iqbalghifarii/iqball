@@ -1,39 +1,136 @@
-body{
-    background:#f3f3f3;
-    color:#333;
-    width:100%;
-    font-family:sans-serif;
-    margin:0 auto;
+/* Reset Dasar */
+body {
+    background: #fdfdfd;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.header{
-    width:90%;
-    margin:auto;
-    height:120px;
-    line-height:120px;
-    background:#417aa8;
-    color:#fff;
+/* Header (Pink) */
+.header {
+    width: 90%;
+    margin: 10px auto 0;
+    height: 120px;
+    background: #fbc2d4; /* Warna pink soft */
+    display: flex;
+    align-items: center;
 }
 
-.jarak{
-    padding:0 2pc;
+.header h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
 }
 
-.menu{
-    background-color:#417aa8;
-    height:50px;
-    line-height:50px;
-    position:relative;
-    width:90%;
-    margin:0 auto;
-    padding:0 auto;
+/* Navigasi (Hijau Muda) */
+.menu {
+    background-color: #c9e2b3; /* Warna hijau soft */
+    height: 45px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .menu ul {
-    float:left;
-    width:70px;
-    display:block;
-    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Konten */
+.content {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 450px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.jarak {
+    padding: 20px 40px;
+}
+
+.kiri {
+    width: 68%;
+    float: left;
+}
+
+.kanan {
+    width: 28%;
+    float: right;
+}
+
+/* Kotak Artikel */
+.border {
+    border: 1px solid #a3c2dc;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.border h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.btn {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.category-title {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.undecor {
+    text-decoration: none;
+    color: #417aa8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Footer (Biru) */
+.footer {
+    width: 90%;
+    margin: 0 auto 20px;
+    height: 50px;
+    background: #4a7fac; /* Warna biru */
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Pemutus Float agar layout tidak hancur */
+.clear {
+    clear: both;
+}
     color:#FFF;
     tect-decoration:none;
 }
