@@ -1,39 +1,137 @@
-/* Reset Dasar */
+/* Pengaturan Dasar */
 body {
-    background: #fdfdfd;
-    color: #333;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #4CAF50; /* Latar belakang hijau cerah sesuai gambar */
+    font-family: Arial, sans-serif;
 }
 
-/* Header (Pink) */
-.header {
+/* Container utama untuk memposisikan web di tengah */
+.main-wrapper {
     width: 90%;
-    margin: 10px auto 0;
-    height: 120px;
-    background: #fbc2d4; /* Warna pink soft */
+    margin: 40px auto;
+}
+
+.jarak {
+    padding: 0 30px;
+}
+
+/* Header & Menu (Warna Biru Tua) */
+.header {
+    background-color: #417aa8;
+    height: 100px;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .header h2 {
-    color: #fff;
     font-size: 20px;
     margin: 0;
 }
 
-/* Navigasi (Hijau Muda) */
 .menu {
-    background-color: #c9e2b3; /* Warna hijau soft */
-    height: 45px;
-    width: 90%;
-    margin: 0 auto;
+    background-color: #417aa8;
+    height: 40px;
     display: flex;
     align-items: center;
+    border-top: 1px solid #333;
 }
 
 .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Konten (Warna Hitam) */
+.content {
+    background-color: #111; /* Latar hitam pekat */
+    padding: 30px 0;
+    min-height: 400px;
+}
+
+.kiri {
+    width: 70%;
+    float: left;
+}
+
+.kanan {
+    width: 25%;
+    float: right;
+    color: white;
+}
+
+/* Border Artikel */
+.border-artikel {
+    border: 1px solid #417aa8; /* Border biru untuk kotak artikel */
+    margin-bottom: 20px;
+}
+
+.padding-artikel {
+    padding: 15px;
+}
+
+.padding-artikel h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.padding-artikel p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.btn-read {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/* Sidebar & Kategori */
+.garis-sidebar {
+    border: 0;
+    border-top: 1px solid #444;
+}
+
+.list-kategori p a {
+    color: #417aa8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Footer (Biru Tua) */
+.footer {
+    background-color: #417aa8;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Pemutus float */
+.clear {
+    clear: both;
+}
     list-style: none;
     margin: 0;
     padding: 0;
