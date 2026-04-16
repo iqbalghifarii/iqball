@@ -1,103 +1,178 @@
+/* RESET STANDAR UNTUK MARGIN DAN PADDING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: #4caf50; /* Warna hijau seperti di gambar */
-    color: #fff;
+    /* MENGUBAH BACKGROUND MENJADI PUTIH */
+    background: #ffffff; 
+    color: #333; /* Warna teks default */
     width: 100%;
     font-family: sans-serif;
-    margin: 0;
-    padding: 20px 0;
+    padding: 20px 0; /* Memberi sedikit ruang di atas/bawah */
 }
 
 .header {
     width: 90%;
     margin: auto;
-    height: 80px;
-    line-height: 80px;
-    background: #417aa8;
+    height: 100px;
+    display: flex; /* Menggunakan Flexbox untuk centering teks */
+    align-items: center; /* Centering vertikal */
+    background: #417aa8; /* Warna biru header */
     color: #fff;
+    /* MENGUBAH BORDER HEADER MENJADI BIRU */
+    border: 2px solid #417aa8; 
+}
+
+.header h2 {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .jarak {
-    padding: 0 20px;
+    padding: 0 30px; /* Padding sisi kiri dan kanan untuk konten */
+    width: 100%; /* Pastikan padding bekerja dalam flexbox header */
 }
 
 .menu {
-    background-color: #4b88bb;
-    height: 40px;
-    line-height: 40px;
+    /* MENGUBAH BACKGROUND MENJADI PUTIH */
+    background-color: #ffffff; 
+    height: 50px;
+    line-height: 50px;
     width: 90%;
     margin: 0 auto;
+    /* MENAMBAHKAN BORDER BIRU PADA MENU (Optional untuk pemisahan) */
+    border-left: 2px solid #417aa8;
+    border-right: 2px solid #417aa8;
+    border-bottom: 2px solid #417aa8;
 }
 
 .menu ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
+    display: flex; /* Menggunakan Flexbox untuk item menu horizontal */
 }
 
 .menu ul li {
-    display: inline;
     margin-right: 20px;
 }
 
 .menu ul li a {
-    color: #fff;
+    color: #417aa8; /* Mengubah warna teks menu menjadi biru */
     text-decoration: none;
     font-size: 14px;
+    padding: 0 10px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #f0f0f0; /* Efek hover ringan */
 }
 
 .content {
     width: 90%;
     margin: auto;
-    background: #111; /* Background gelap seperti di gambar */
-    color: #fff;
-    padding: 20px 0;
+    /* MENGUBAH BACKGROUND MENJADI PUTIH */
+    background: #ffffff; 
+    color: #333;
+    padding: 30px 0;
     min-height: 400px;
+    /* MENAMBAHKAN BORDER BIRU PADA KONTAINER KONTEN */
+    border-left: 2px solid #417aa8;
+    border-right: 2px solid #417aa8;
+}
+
+/* Mengatur layout kolom (Kiri dan Kanan) */
+.content > .jarak {
+    display: flex;
+    justify-content: space-between; /* Memberi ruang antar kolom */
 }
 
 .kiri {
     width: 65%;
-    float: left;
 }
 
 .kanan {
     width: 30%;
-    float: right;
-    border-left: 1px solid #333;
-    padding-left: 20px;
+    /* MENAMBAHKAN BORDER BIRU PEMISAH VERTIKAL */
+    border-left: 2px solid #417aa8; 
+    padding-left: 30px;
 }
 
+/* Mengatur gaya artikel di sisi kiri */
 .border {
-    border: 1px solid #444;
-    margin-bottom: 20px;
-    padding: 15px;
+    /* MENGUBAH BORDER ARTIKEL MENJADI BIRU */
+    border: 2px solid #417aa8; 
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #ffffff; /* Pastikan background putih */
 }
 
+.border h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.border p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Mengatur gaya tombol "Read More.." */
 .btn {
-    background: #333;
+    /* MENGUBAH BACKGROUND & BORDER TOMBOL MENJADI BIRU */
+    background: #417aa8; 
     color: #fff;
-    border: 1px solid #666;
-    padding: 5px 10px;
+    border: none;
+    padding: 8px 15px;
     cursor: pointer;
+    font-size: 12px;
 }
 
+.btn:hover {
+    background: #336699; /* Efek hover tombol */
+}
+
+/* Mengatur gaya teks di sisi kanan (Kategori) */
+.kanan h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.kanan hr {
+    /* MENGUBAH WARNA GARIS PEMISAH HR MENJADI BIRU */
+    border: 0;
+    border-top: 2px solid #417aa8; 
+    margin-bottom: 15px;
+}
+
+.kanan p {
+    margin-bottom: 10px;
+}
+
+/* Mengatur gaya link kategori */
 .undecor {
     text-decoration: none;
-    color: #4b88bb;
-    font-size: 13px;
+    color: #417aa8; /* Mengubah warna teks link menjadi biru */
+    font-size: 14px;
 }
 
+.undecor:hover {
+    text-decoration: underline; /* Efek hover link */
+}
+
+/* Mengatur gaya footer */
 .footer {
     width: 90%;
     margin: auto;
-    height: 40px;
-    line-height: 40px;
-    background: #417aa8;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #417aa8; /* Warna biru footer */
     color: #fff;
-}
-
-/* Biar float tidak merusak layout */
-.content::after {
-    content: "";
-    display: table;
-    clear: both;
+    /* MENGUBAH BORDER FOOTER MENJADI BIRU */
+    border: 2px solid #417aa8; 
+    font-size: 14px;
 }
